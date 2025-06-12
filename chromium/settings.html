@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+        }
+        
+        input {
+            width: 50%
+        }
+
+        button {
+            padding: 1%;
+            width: 25%;
+        }
+
+        #status {
+            font-weight: bold;
+        }
+
+        hr {
+            margin-top: 5%;
+            margin-bottom: 2.5%;
+        }
+    </style>
+    <body>
+        <label for="radius">Light Radius</label>
+        <br>
+        <label for="radius" id="radiusLabel">10</label>
+        <br>
+        <input type="range" id="radius" min="5" max="25" value="10" />
+        <br><br>
+        <label for="transparency">Overlay transparency: </label>
+        <br>
+        <label for="transparency" id="transparencyLabel">0</label>
+        <br>
+        <input type="range" id="transparency" min="0" max="10" step="0.5" value="0" />
+        <hr>
+        <button id="save">Save</button> <button id="reset">Reset</button>
+        <p id="status"></p>
+        <p>Close this menu to cancel.</p>
+        <br> <!-- To prevent a scroll bar from appearing in some browsers. -->
+        <script src="settings.js"></script>
+    </body>
+</html>
